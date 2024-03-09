@@ -16,6 +16,14 @@ document.addEventListener("keypress",function(){
     }
 });
 
+let body=document.querySelector("body");
+body.addEventListener("click",function(){
+    if(started==false){
+        started=true;
+        levelUp();
+    }
+})
+
 function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
@@ -64,7 +72,7 @@ function checkAnswer(idx){
         setTimeout(function(){
             document.querySelector("body").style.color="black";
         },1000);
-        reset();
+        setTimeout(reset,1000);
     }
 }
 let allBtns=document.querySelectorAll(".btn");
@@ -78,5 +86,3 @@ function reset(){
     gameSeq=[];
     userSeq=[];
 }
-
-
