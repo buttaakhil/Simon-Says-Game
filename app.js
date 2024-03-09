@@ -22,7 +22,7 @@ body.addEventListener("click",function(){
         started=true;
         levelUp();
     }
-})
+});
 
 function gameFlash(btn){
     btn.classList.add("flash");
