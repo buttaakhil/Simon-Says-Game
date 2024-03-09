@@ -67,7 +67,7 @@ function checkAnswer(idx){
     }
     else{
         maxScore=level>maxScore?level:maxScore;
-        h2.innerHTML=`Game Over! Your score was '${level}'<br>Highest score was "${maxScore}"<br><br>Press any key to start`;
+        h2.innerHTML=`Game Over! Your score was '${level}'<br>Highest score was "${maxScore}"<br><br>Press here or any key to start`;
         document.querySelector("body").style.color="red";
         setTimeout(function(){
             document.querySelector("body").style.color="black";
